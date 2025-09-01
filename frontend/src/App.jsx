@@ -23,8 +23,11 @@ return 1 + 1
     prism.highlightAll()
   })
 
+
+  const BASE_URL = import.meta.env.MODE === "development" ? 'http://localhost:3000/ai/get-review' : '/ai/get-review'
+
  async function reviewCode(){
- const response = await axios.post('http://localhost:3000/ai/get-review', {code})
+ const response = await axios.post(BASE_URL, {code})
 
  setReview(response.data)
 
