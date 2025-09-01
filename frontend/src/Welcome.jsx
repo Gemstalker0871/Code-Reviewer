@@ -17,7 +17,7 @@ const WelcomePage = () => {
 
       <div className="logo-container">
         <img src={logo} alt="logo" />
-        <p>BugByte Designed by Sam</p>
+        <p>BugByte - Designed by Sam</p>
       </div>
     </div>
   );
